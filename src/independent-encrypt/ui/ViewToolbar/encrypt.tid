@@ -1,0 +1,19 @@
+title: $:/plugins/macaylamarvelous81/independent-encrypt/ui/Buttons/encrypt
+tags: $:/tags/ViewToolbar
+caption: {{$:/core/images/locked-padlock}} {{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Caption}}
+description: {{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Hint}}
+
+\whitespace trim
+\procedure encryptButton()
+<$button popup=`$:/state/encrypt-form/$(currentTiddler)$` tooltip={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Hint}} aria-label={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Caption}} class=<<tv-config-toolbar-class>>>
+<%if [<tv-config-toolbar-icons>match[yes]] %>
+{{$:/core/images/locked-padlock}}
+<%endif%>
+<%if [<tv-config-toolbar-text>match[yes]] %>
+<span class="tc-btn-text">
+<$text text={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Caption}}/>
+</span>
+<%endif%>
+</$button>
+\end
+<<encryptButton>>
