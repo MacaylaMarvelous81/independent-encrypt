@@ -1,3 +1,25 @@
+created: 20250617034259711
+modified: 20250617035650705
+tags: 
 title: $:/plugins/macaylamarvelous81/independent-encrypt/readme
+type: text/vnd.tiddlywiki
 
-To be written.
+This is a TiddlyWiki plugin for encrypting Tiddlers independently or as a group; smaller blocks than the entire wiki.
+
+! Installation
+
+To add the plugin to your own wiki, just //drag the following link to your TiddlyWiki browser window//.
+
+[[$:/plugins/macaylamarvelous81/independent-encrypt]]
+
+! Encrypting a Tiddler
+
+There is a new tool to encrypt Tiddlers in the view mode. By default, it is hidden under 'More actions', but this can be changed in the [[$:/ControlPanel]]. Fields will appear at the top of the Tiddler, where you can set the encryption password for this Tiddler, as well as the notice that will appear in place of the Tiddler while it is encrypted.
+
+! Decrypting a Tiddler
+
+Encrypted Tiddlers will have a password input to decrypt the Tiddler appear below the encryption notice. Enter the password and press the decrypt button to decrypt the Tiddler.
+
+! Encrypt Groups
+
+Tiddlers that have a tag starting with [[$:/tags/EncryptGroup/]] will be part of an Encrypt Group. Tiddlers that share that tag will be encrypted and decrypted together. Their encryption notice will be shared as well. This way, related Tiddlers, such as images, can be encrypted and decrypted together. Only one Encrypt Group per Tiddler is supported; whichever tag with the prefix is found by the plugin first will be used.

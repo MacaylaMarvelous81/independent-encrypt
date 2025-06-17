@@ -1,0 +1,9 @@
+created: 20250617040044675
+encrypt-notice: This Tiddler is encrypted. The password is ''password''.
+encrypted: {"iv":"sLug1qCuvZQxQ3zEekEiSA==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"xByStTASRxg=","ct":"kdShGS1JvtilN+D2/sWC1PzPS+eZ8L6FcQEfUl2AAnD+U5/v4MFJj7cCBODxdbMD3VwQjawgYiNLENRnW4KCc/gI6wMqRMJ2w0XUPJNdnB0l3AWuJZqbnNGiH+3Onyzwv/zO2xXn0+8Jcwf/sfMX2gEQsVk5yBotTIgll3lG5xboAC8nkElOmgSkvhpvVftq0VGZWEaCr+qsZsR5NpJVI0k5mVxB5m4j0qhx4kLBZRKx8YLpg37q3Yuw9VzRSonDVj/NaxoMY9xmTdm3XUNc895H9xKb55aWqrpHkxWJpdS3B46KFCGhCAiYvtrRzYGjRFufAcf9akWdLM3oQHGeYvChn+iu8xZo6Me0A/SL"}
+modified: 20250617040201076
+tags: 
+title: Sample Encrypted Tiddler
+type: text/vnd.tiddlywiki
+
+This Tiddler is encrypted. The password is ''password''.

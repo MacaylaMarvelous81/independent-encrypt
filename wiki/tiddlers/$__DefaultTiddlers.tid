@@ -1,3 +1,9 @@
+created: 20250617035929432
+modified: 20250617040604361
 title: $:/DefaultTiddlers
+type: text/vnd.tiddlywiki
 
-$:/plugins/Modern.TiddlyDev/doc $:/plugins/macaylamarvelous81/independent-encrypt
+[[Independent Encrypt]]
+[[Sample Encrypted Tiddler]]
+[[Sample Grouped Tiddler]]
+[[Sample Grouped Tiddler B]]
