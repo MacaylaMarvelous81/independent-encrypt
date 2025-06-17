@@ -1,0 +1,41 @@
+created: 20250617194653066
+description: Decrypt a group of sample encrypted Tiddlers
+modified: 20250617195506355
+tags: $:/tags/wiki-test-spec
+title: tests/DecryptGroup
+type: text/vnd.tiddlywiki-multiple
+
+title: Tiddler A
+tags: $:/tags/EncryptGroup/TestGroup
+encrypt-notice: This group is encrypted.
+encrypted: {"iv":"xsU7vZoL1XxnITftx2AUWg==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"LEoPxmhCxMs=","ct":"yDkAa5RTKyf9PVw3K9FX1CA2nB3YeedDVIIw5l+93b/oChWLfiormAL8P5qTX5SXDdPFPvqAmChJ6uvJ/XMilwGBvz5UImkxIR4FedLOi+2Nsa6jKblAtteqB/JFJ0R2bTYp9mLyBtoDU3dNmAMhSAJHEW5OGA404zSbnU7ZOsFV/qnE8NjVh7es3oFSnVN8yilXEgKcixyAWScF8NTIBtoep92Gu9b87m605acmLMjC191xv18GPDlSWicyDYhlYe4W49m6s+YuXuskgg=="}
+
+This group is encrypted.
++
+title: Tiddler B
+tags: $:/tags/EncryptGroup/TestGroup
+encrypt-notice: This group is encrypted.
+encrypted: {"iv":"blN9PQ+WwNwU7pFdq1JCkw==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"LEoPxmhCxMs=","ct":"m5Jr+E16p8qb0m8YYsZ1x82iwZ1+tu5ORYztZWsMeFoiO6mYijdGg5oO5e+bGG8NW/gJnexdlBNV+LRRc/IfgcJWNQinQJPU6X+iwc3oDBkpSSVZwK86Pm2WTG6ZrfVSLIFP9VBKz6rYH9YZdNmlTMScJkwTZejCWdmPeJ8pQwX4XjeLnulseAB+p+LiMPIyEeSe7vpnEUJG0hc4o94="}
+
+This group is encrypted.
++
+title: Actions
+
+<$navigator story="$:/StoryList">
+<$tiddler tiddler="Tiddler A">
+<$decryption-agent>
+<$action-setfield $tiddler="$:/temp/decrypt-form/Tiddler A" password="password"/>
+<$action-sendmessage $message="tw-decrypt-tiddler"/>
+</$decryption-agent>
+</$tiddler>
+</$navigator>
++
+title: Output
+
+{{Tiddler A}}
+
+{{Tiddler B}}
++
+title: ExpectedResult
+
+<p>Hello, I'm Tiddler A.</p><p>and I'm Tiddler B!</p>
