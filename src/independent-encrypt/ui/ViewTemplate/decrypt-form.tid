@@ -1,0 +1,7 @@
+title: $:/plugins/macaylamarvelous81/independent-encrypt/ui/ViewTemplate/decrypt-form
+tags: $:/tags/ViewTemplate
+list-after: $:/core/ui/ViewTemplate/body
+
+<$reveal tag="div" type="nomatch" text="" default="" state="!!encrypted">
+decrypt form
+</$reveal>

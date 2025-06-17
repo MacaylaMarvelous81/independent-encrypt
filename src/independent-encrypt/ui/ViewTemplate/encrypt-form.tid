@@ -8,7 +8,7 @@ list-before: $:/core/ui/ViewTemplate/body
 <em class="tc-edit tc-small-gap-right">
 {{$:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/Password/Prompt}}
 </em>
-<$edit-text tiddler=`$:/temp/encrypt-form/$(currentTiddler)$` field="password" type="password" placeholder={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/Password/Placeholder}} class="tc-edit-texteditor tc-encrypt-password-entry"/>
+<$edit-text tiddler=`$:/temp/encrypt-form/$(currentTiddler)$` field="password" type="password" placeholder={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/Password/Placeholder}} class="tc-edit-texteditor"/>
 </div>
 <$edit-text field="encrypt-notice" tag="textarea" placeholder={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/EncryptNotice/Placeholder}} class="tc-edit-texteditor"/>
 <$button message="tw-encrypt-tiddler" tooltip={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Hint}}>{{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Encrypt/Caption}}</$button>
