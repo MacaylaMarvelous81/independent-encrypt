@@ -1,0 +1,30 @@
+created: 20250617194124028
+description: Overwrite original tiddler text with a notice
+modified: 20250617194535927
+tags: $:/tags/wiki-test-spec
+title: tests/Notice
+type: text/vnd.tiddlywiki-multiple
+
+title: Encryption Result
+encrypt-notice: sorry, encrypted!
+
+You can read me because I'm decrypted.
++
+title: Actions
+
+<$navigator story="$:/StoryList">
+<$tiddler tiddler="Encryption Result">
+<$encryption-agent>
+<$action-setfield $tiddler="$:/temp/encrypt-form/Encryption Result" password="password"/>
+<$action-sendmessage $message="tw-encrypt-tiddler"/>
+</$encryption-agent>
+</$tiddler>
+</$navigator>
++
+title: Output
+
+{{Encryption Result}}
++
+title: ExpectedResult
+
+<p>sorry, encrypted!</p>
