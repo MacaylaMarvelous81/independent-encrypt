@@ -1,33 +1,29 @@
 created: 20250617044315789
 description: Test decrypting a sample Tiddler
-modified: 20250617045807256
+encrypt-notice: currently encrypted.
+encrypted: {"iv":"vLjHR2yjVdoQJXqjY8G2jQ==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"LEoPxmhCxMs=","ct":"c9TQapAU+IGMsSRBGxR4BADfm7W6w4KEbnAtdkg/N7kia6+ji6AttQ1baRNZcdqcWfVeE6v6u/9fBwPtDr7C6os0rQZyAw7NvA04KNdkv9ctRCS8eUotBD0IPOaTjoR7GqYMqtFzssS8r4yGdaAyfHcpw0fI0R9YkI3++QS3CrZJfTGH5Wj92LUjSv2HUVuT/78pQT5MW2HyQOlRuqyC14mYtVEyCk3E"}
+modified: 20250617192141496
 tags: $:/tags/wiki-test-spec
 title: tests/Decrypt
 type: text/vnd.tiddlywiki-multiple
 
-title: $:/temp/decrypt-form/Encrypted
-password: password
+title: tests/Decrypt
+encrypt-notice: currently encrypted.
+encrypted: {"iv":"vLjHR2yjVdoQJXqjY8G2jQ==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"LEoPxmhCxMs=","ct":"c9TQapAU+IGMsSRBGxR4BADfm7W6w4KEbnAtdkg/N7kia6+ji6AttQ1baRNZcdqcWfVeE6v6u/9fBwPtDr7C6os0rQZyAw7NvA04KNdkv9ctRCS8eUotBD0IPOaTjoR7GqYMqtFzssS8r4yGdaAyfHcpw0fI0R9YkI3++QS3CrZJfTGH5Wj92LUjSv2HUVuT/78pQT5MW2HyQOlRuqyC14mYtVEyCk3E"}
 +
-title: Encrypted
-encrypt-notice: still encrypted
-encrypted: {"iv":"QAg9gVK5kDIDwNL39bNEYw==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"stNQIeqR7sk=","ct":"ycJl8sTsRj04Chx6PL0go9Ngt9Y/5P46qdGpJ0fudGNfei9I6RQtQnc9sRWDcehMtxwY86adYr6tx2W+ozsGReOCpH5ZserHYOk3v5ilSyJKSZef5F2mqc+LOOmFazJRs/v8LVVhdecyDc5ExTVit4NlwvFg7/6lYroZwDlNsLSvJAEEbOpxBnPBIoIB/P2XYoZcKQyf7vdyV6M="}
+title: Actions
 
-still encrypted
-
+<$navigator story="$:/StoryList">
+<$decryption-agent>
+<$action-setfield $tiddler="$:/temp/decrypt-form/tests/Decrypt" password="password"/>
 <$action-sendmessage $message="tw-decrypt-tiddler"/>
-+
-title: ActualOutput
-
-{{Encrypted}}
-+
-title: ActualExpectedResult
-
-<p>decrypted!</p>
+</$decryption-agent>
+</$navigator>
 +
 title: Output
 
-I got lazy. not sure how to write a test for this yet. the message won't reach the decryption-agent because the body content and decryption form are siblings; the decryption-agent isn't a parent of it, so the message won't reach it.
+{{Decryption Result}}
 +
 title: ExpectedResult
 
-<p>I got lazy. not sure how to write a test for this yet. the message won't reach the decryption-agent because the body content and decryption form are siblings; the decryption-agent isn't a parent of it, so the message won't reach it.</p>
+<p>decrypted!</p>
