@@ -1,0 +1,7 @@
+.tc-encrypt-password-entry input.tc-edit-texteditor {
+    display: inline;
+}
+
+.tc-encrypt-password-entry .tc-edit-typeeditor {
+    width: auto;
+}

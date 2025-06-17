@@ -1,0 +1,5 @@
+title: $:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/
+
+Password/Placeholder: encryption password
+Password/Prompt: Password:
+EncryptNotice/Placeholder: Write the notice that will replace the tiddler text while encrypted...
