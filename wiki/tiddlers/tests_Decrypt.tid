@@ -1,23 +1,23 @@
 created: 20250617044315789
 description: Test decrypting a sample Tiddler
-encrypt-notice: currently encrypted.
-encrypted: {"iv":"vLjHR2yjVdoQJXqjY8G2jQ==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"LEoPxmhCxMs=","ct":"c9TQapAU+IGMsSRBGxR4BADfm7W6w4KEbnAtdkg/N7kia6+ji6AttQ1baRNZcdqcWfVeE6v6u/9fBwPtDr7C6os0rQZyAw7NvA04KNdkv9ctRCS8eUotBD0IPOaTjoR7GqYMqtFzssS8r4yGdaAyfHcpw0fI0R9YkI3++QS3CrZJfTGH5Wj92LUjSv2HUVuT/78pQT5MW2HyQOlRuqyC14mYtVEyCk3E"}
-modified: 20250617192141496
+modified: 20250617193633419
 tags: $:/tags/wiki-test-spec
 title: tests/Decrypt
 type: text/vnd.tiddlywiki-multiple
 
-title: tests/Decrypt
+title: Decryption Result
 encrypt-notice: currently encrypted.
 encrypted: {"iv":"vLjHR2yjVdoQJXqjY8G2jQ==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"LEoPxmhCxMs=","ct":"c9TQapAU+IGMsSRBGxR4BADfm7W6w4KEbnAtdkg/N7kia6+ji6AttQ1baRNZcdqcWfVeE6v6u/9fBwPtDr7C6os0rQZyAw7NvA04KNdkv9ctRCS8eUotBD0IPOaTjoR7GqYMqtFzssS8r4yGdaAyfHcpw0fI0R9YkI3++QS3CrZJfTGH5Wj92LUjSv2HUVuT/78pQT5MW2HyQOlRuqyC14mYtVEyCk3E"}
 +
 title: Actions
 
 <$navigator story="$:/StoryList">
+<$tiddler tiddler="Decryption Result">
 <$decryption-agent>
-<$action-setfield $tiddler="$:/temp/decrypt-form/tests/Decrypt" password="password"/>
+<$action-setfield $tiddler="$:/temp/decrypt-form/Decryption Result" password="password"/>
 <$action-sendmessage $message="tw-decrypt-tiddler"/>
 </$decryption-agent>
+</$tiddler>
 </$navigator>
 +
 title: Output
