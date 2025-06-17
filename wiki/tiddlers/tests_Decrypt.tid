@@ -1,0 +1,33 @@
+created: 20250617044315789
+description: Test decrypting a sample Tiddler
+modified: 20250617045807256
+tags: $:/tags/wiki-test-spec
+title: tests/Decrypt
+type: text/vnd.tiddlywiki-multiple
+
+title: $:/temp/decrypt-form/Encrypted
+password: password
++
+title: Encrypted
+encrypt-notice: still encrypted
+encrypted: {"iv":"QAg9gVK5kDIDwNL39bNEYw==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"stNQIeqR7sk=","ct":"ycJl8sTsRj04Chx6PL0go9Ngt9Y/5P46qdGpJ0fudGNfei9I6RQtQnc9sRWDcehMtxwY86adYr6tx2W+ozsGReOCpH5ZserHYOk3v5ilSyJKSZef5F2mqc+LOOmFazJRs/v8LVVhdecyDc5ExTVit4NlwvFg7/6lYroZwDlNsLSvJAEEbOpxBnPBIoIB/P2XYoZcKQyf7vdyV6M="}
+
+still encrypted
+
+<$action-sendmessage $message="tw-decrypt-tiddler"/>
++
+title: ActualOutput
+
+{{Encrypted}}
++
+title: ActualExpectedResult
+
+<p>decrypted!</p>
++
+title: Output
+
+I got lazy. not sure how to write a test for this yet. the message won't reach the decryption-agent because the body content and decryption form are siblings; the decryption-agent isn't a parent of it, so the message won't reach it.
++
+title: ExpectedResult
+
+<p>I got lazy. not sure how to write a test for this yet. the message won't reach the decryption-agent because the body content and decryption form are siblings; the decryption-agent isn't a parent of it, so the message won't reach it.</p>
