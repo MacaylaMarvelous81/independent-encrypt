@@ -2,6 +2,14 @@ title: $:/plugins/macaylamarvelous81/independent-encrypt/ui/ViewTemplate/decrypt
 tags: $:/tags/ViewTemplate
 list-after: $:/core/ui/ViewTemplate/body
 
-<$reveal tag="div" type="nomatch" text="" default="" state="!!encrypted">
-decrypt form
+<$decryption-agent>
+<$reveal tag="div" type="nomatch" text="" default="" state="!!encrypted" class="tc-tiddler-edit-frame">
+<div class="tc-encrypt-password-entry">
+<em class="tc-edit tc-small-gap-right">
+{{$:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/Password/Prompt}}
+</em>
+<$edit-text tiddler=`$:/temp/decrypt-form/$(currentTiddler)$` field="password" type="password" placeholder={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Fields/Password/Placeholder}} class="tc-edit-texteditor"/>
+</div>
+<$button message="tw-decrypt-tiddler" tooltip={{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Decrypt/Hint}}>{{$:/plugins/macaylamarvelous81/independent-encrypt/text/Buttons/Decrypt/Caption}}</$button>
 </$reveal>
+</$decryption-agent>
